@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VisioCreate - My Account</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"> 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/Account2.css">
+</head>
+<body>
+  <header class="py-3 border-bottom">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="#" class="navbar-brand fw-bold fs-4 text-dark">VisioCreate.</a>     
+      <nav class="d-none d-md-flex gap-4">
+        <a href="#" class="nav-link">Home</a>
+        <a href="#" class="nav-link">Shop</a>
+        <a href="#" class="nav-link">Product</a>
+        <a href="#" class="nav-link">Contact Us</a>
+      </nav>
+      <div class="d-flex align-items-center gap-3">
+        <i class="bi bi-search fs-5 cursor-pointer"></i>
+        <i class="bi bi-person fs-5 cursor-pointer"></i>
+        <div class="position-relative cursor-pointer">
+          <i class="bi bi-bag fs-5"></i>
+          <span id="cartBadge" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark">0</span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="container my-5">
+    <h1 class="text-center fw-bold mb-5">My Account</h1>
+    <div class="row g-5">     
+      <div class="col-lg-3">
+        <div class="sidebar text-center">
+          <div class="profile-img-container">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150" alt="Sofia Havertz" class="profile-img">
+            <div class="camera-btn"><i class="bi bi-camera"></i></div>
+          </div>
+          <h5 class="fw-bold mb-4">Sofia Havertz</h5>          
+          <div class="nav flex-column text-start">
+            <a href="#" class="nav-link active">Account</a>
+            <a href="#" class="nav-link">Address</a>
+            <a href="#" class="nav-link">Orders</a>
+            <a href="#" class="nav-link">Wishlist</a>
+            <a href="#" class="nav-link text-secondary">Log Out</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <h4 class="fw-bold mb-4">Your Wishlist</h4>       
+        <div class="table-responsive">
+          <table class="table wishlist-table">
+            <thead>
+              <tr>
+                <th style="width: 40px;"></th>
+                <th>Product</th>
+                <th>Price</th>
+                <th class="text-end">Action</th>
+              </tr>
+            </thead>
+            <tbody>             
+              <tr class="wishlist-item">
+                <td class="text-center"><i class="bi bi-x-lg remove-btn"></i></td>
+                <td>
+                  <div class="d-flex align-items-center gap-3">
+                    <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=80" alt="Tray Table" class="rounded" width="60">
+                    <div>
+                      <div class="fw-bold text-dark">Tray Table</div>
+                      <small class="text-muted">Color: Black</small>
+                    </div>
+                  </div>
+                </td>
+                <td class="fw-semibold">$19.19</td>
+                <td class="text-end"><button class="btn btn-dark-custom add-to-cart-btn">Add to cart</button></td>
+              </tr>
+              <tr class="wishlist-item">
+                <td class="text-center"><i class="bi bi-x-lg remove-btn"></i></td>
+                <td>
+                  <div class="d-flex align-items-center gap-3">
+                    <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=80" alt="Sofa" class="rounded" width="60">
+                    <div>
+                      <div class="fw-bold text-dark">Sofa</div>
+                      <small class="text-muted">Color: Beige</small>
+                    </div>
+                  </div>
+                </td>
+                <td class="fw-semibold">$345</td>
+                <td class="text-end"><button class="btn btn-dark-custom add-to-cart-btn">Add to cart</button></td>
+              </tr>
+              <tr class="wishlist-item">
+                <td class="text-center"><i class="bi bi-x-lg remove-btn"></i></td>
+                <td>
+                  <div class="d-flex align-items-center gap-3">
+                    <img src="https://images.unsplash.com/photo-1616046229478-9901c5536a45?w=80" alt="Bamboo basket" class="rounded" width="60">
+                    <div>
+                      <div class="fw-bold text-dark">Bamboo basket</div>
+                      <small class="text-muted">Color: Beige</small>
+                    </div>
+                  </div>
+                </td>
+                <td class="fw-semibold">$8.80</td>
+                <td class="text-end"><button class="btn btn-dark-custom add-to-cart-btn">Add to cart</button></td>
+              </tr>
+              <tr class="wishlist-item">
+                <td class="text-center"><i class="bi bi-x-lg remove-btn"></i></td>
+                <td>
+                  <div class="d-flex align-items-center gap-3">
+                    <img src="https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?w=80" alt="Pillow" class="rounded" width="60">
+                    <div>
+                      <div class="fw-bold text-dark">Pillow</div>
+                      <small class="text-muted">Color: Beige</small>
+                    </div>
+                  </div>
+                </td>
+                <td class="fw-semibold">$8.80</td>
+                <td class="text-end"><button class="btn btn-dark-custom add-to-cart-btn">Add to cart</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="pt-5 pb-4 mt-5">
+    <div class="container">
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center pb-4 border-bottom border-secondary">
+        <div class="d-flex align-items-center gap-3 mb-3 mb-md-0">
+          <span class="fs-4 fw-bold text-white">VisioCreate.</span>
+          <span class="border-start border-secondary ps-3 text-secondary">Gift & Decoration Store</span>
+        </div>
+        <div class="d-flex gap-4">
+          <a href="#" class="text-secondary text-decoration-none">Home</a>
+          <a href="#" class="text-secondary text-decoration-none">Shop</a>
+          <a href="#" class="text-secondary text-decoration-none">Product</a>
+          <a href="#" class="text-secondary text-decoration-none">Blog</a>
+          <a href="#" class="text-secondary text-decoration-none">Contact Us</a>
+        </div>
+      </div>
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center pt-4 small">
+        <p class="mb-2 mb-md-0">Copyright © 2023 VisioCreate. All rights reserved <a href="#" class="text-white text-decoration-none ms-3">Privacy Policy</a> <a href="#" class="text-white text-decoration-none ms-2">Terms of Use</a></p>
+        <div class="d-flex gap-3 text-white fs-5">
+          <i class="bi bi-instagram"></i>
+          <i class="bi bi-facebook"></i>
+          <i class="bi bi-youtube"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src=" js/Account2.js"></script>
+</body>
+</html>

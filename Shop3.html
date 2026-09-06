@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VisioCreate - Shop Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href=".css/Shop.css">
+</head>
+<body>
+  <div class="top-bar text-center py-2">
+    <small><i class="bi bi-ticket-perforated me-1"></i> 30% off storewide — Limited time! <a href="#" class="fw-semibold text-primary text-decoration-underline">Shop Now <i class="bi bi-arrow-right"></i></a></small>
+  </div>
+  <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-4" href="#">VisioCreate<span class="text-secondary">.</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link text-dark" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link active fw-semibold" href="#">Shop</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="#">Product</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="#">Contact Us</a></li>
+        </ul>
+        <div class="d-flex align-items-center gap-3 fs-5">
+          <a href="#" class="text-dark"><i class="bi bi-search"></i></a>
+          <a href="#" class="text-dark"><i class="bi bi-person-circle"></i></a>
+          <a href="#" class="text-dark position-relative">
+            <i class="bi bi-bag"></i>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-dark text-white fs-6">0</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <header class="shop-hero py-5">
+    <div class="container text-center py-4">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb justify-content-center mb-2 small text-muted">
+          <li class="breadcrumb-item"><a href="#" class="text-muted text-decoration-none">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Shop</li>
+        </ol>
+      </nav>
+     <h1 class="mb-3 w-100 shop-hero-banner" style="background: url('https://png.pngtree.com/thumb_back/fh260/background/20230624/pngtree-brown-themed-small-coffee-shop-in-3d-rendered-image-image_3667835.jpg') center/cover no-repeat; min-height: 300px; border-radius: 16px;" aria-label="Shop Page"></h1>
+      <p class="text-muted">Let's design the place you always imagined.</p>
+    </div>
+  </header>
+  <main class="container my-5">
+    <div class="d-flex flex-wrap justify-content-between align-items-center mb-4 gap-3">
+      <div class="d-flex flex-wrap gap-3">
+        <div>
+          <label class="form-label small text-uppercase text-muted fw-bold mb-1">Categories</label>
+          <select class="form-select form-select-sm filter-select">
+            <option selected>Living Room</option>
+            <option value="1">Bedroom</option>
+            <option value="2">Kitchen</option>
+          </select>
+        </div>
+        <div>
+          <label class="form-label small text-uppercase text-muted fw-bold mb-1">Price</label>
+          <select class="form-select form-select-sm filter-select">
+            <option selected>All Price</option>
+            <option value="1">$0.00 - $100.00</option>
+            <option value="2">$100.00 - $300.00</option>
+          </select>
+        </div>
+      </div>
+      <div class="d-flex align-items-center gap-3 ms-auto">
+        <span class="small text-muted fw-semibold">Sort by</span>
+        <div class="btn-group border rounded p-1" role="group">
+          <button type="button" class="btn btn-sm btn-light active"><i class="bi bi-grid-3x3-gap-fill"></i></button>
+          <button type="button" class="btn btn-sm btn-light"><i class="bi bi-grid-fill"></i></button>
+          <button type="button" class="btn btn-sm btn-light"><i class="bi bi-view-list"></i></button>
+          <button type="button" class="btn btn-sm btn-light"><i class="bi bi-list-task"></i></button>
+        </div>
+      </div>
+    </div>
+    <div class="row g-4" id="productGrid">
+      <div class="col-12 col-md-6 col-lg-6">
+        <div class="card h-100 border-0 product-card">
+          <div class="row g-0 align-items-center">
+            <div class="col-5 position-relative bg-light rounded p-3 text-center">
+              <span class="badge bg-white text-dark border position-absolute top-0 start-0 m-3 shadow-sm">NEW</span>
+              <span class="badge bg-success position-absolute top-0 start-0 ms-3 mt-5">-50%</span>
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdqGuWOQH8l8Zl9CYBNAlxcAjWBKKfDOrTrQaCL_BhJw&s=10" class="img-fluid rounded" alt="Off-white Pillow">
+            </div>
+            <div class="col-7">
+              <div class="card-body">
+                <div class="text-warning mb-1"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                <h5 class="card-title fw-bold fs-6 mb-1">Off-white Pillow</h5>
+                <p class="mb-2 fw-semibold">$7.99 <span class="text-muted text-decoration-line-through fw-normal small">$15.00</span></p>
+                <p class="card-text text-muted small">Super-soft cushion cover in off-white with a tactile pattern that enhances the different tones in the pile and base.</p>
+                <button class="btn btn-dark btn-sm w-100 mb-2 add-to-cart">Add to cart</button>
+                <button class="btn btn-link text-dark text-decoration-none p-0 small w-100 text-center toggle-wishlist"><i class="bi bi-heart me-1"></i> Wishlist</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-6">
+        <div class="card h-100 border-0 product-card">
+          <div class="row g-0 align-items-center">
+            <div class="col-5 position-relative bg-light rounded p-3 text-center">
+              <span class="badge bg-white text-dark border position-absolute top-0 start-0 m-3 shadow-sm">NEW</span>
+              <img src="https://m.media-amazon.com/images/I/415AkmkLKnL._AC_SR290,290_.jpg" class="img-fluid rounded" alt="Table Lamp">
+            </div>
+            <div class="col-7">
+              <div class="card-body">
+                <div class="text-warning mb-1"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                <h5 class="card-title fw-bold fs-6 mb-1">Table Lamp</h5>
+                <p class="mb-2 fw-semibold">$39.99</p>
+                <p class="card-text text-muted small">Like small jewels in shiny brass and gray clear glass, spread a soft mood light that creates exciting shadows on walls and ceilings.</p>
+                <button class="btn btn-dark btn-sm w-100 mb-2 add-to-cart">Add to cart</button>
+                <button class="btn btn-link text-dark text-decoration-none p-0 small w-100 text-center toggle-wishlist"><i class="bi bi-heart me-1"></i> Wishlist</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-6">
+        <div class="card h-100 border-0 product-card">
+          <div class="row g-0 align-items-center">
+            <div class="col-5 position-relative bg-light rounded p-3 text-center">
+              <img src="https://www.raneen.com/media/catalog/product/w/o/woodrate_1115_2_.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700" class="img-fluid rounded" alt="White Drawer unit">
+            </div>
+            <div class="col-7">
+              <div class="card-body">
+                <div class="text-warning mb-1"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                <h5 class="card-title fw-bold fs-6 mb-1">White Drawer unit</h5>
+                <p class="mb-2 fw-semibold">$89.99</p>
+                <p class="card-text text-muted small">Super-soft cushion cover in off-white with a tactile pattern that enhances the different tones in the pile and base.</p>
+                <button class="btn btn-dark btn-sm w-100 mb-2 add-to-cart">Add to cart</button>
+                <button class="btn btn-link text-dark text-decoration-none p-0 small w-100 text-center toggle-wishlist"><i class="bi bi-heart me-1"></i> Wishlist</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-6">
+        <div class="card h-100 border-0 product-card">
+          <div class="row g-0 align-items-center">
+            <div class="col-5 position-relative bg-light rounded p-3 text-center">
+              <span class="badge bg-white text-dark border position-absolute top-0 start-0 m-3 shadow-sm">NEW</span>
+              <img src="https://m.media-amazon.com/images/I/71WHiyw6AGL._AC_UF894,1000_QL80_.jpg" class="img-fluid rounded" alt="Cozy Sofa">
+            </div>
+            <div class="col-7">
+              <div class="card-body">
+                <div class="text-warning mb-1"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                <h5 class="card-title fw-bold fs-6 mb-1">Cozy Sofa</h5>
+                <p class="mb-2 fw-semibold">$299.00</p>
+                <p class="card-text text-muted small">Easy transportation was the goal when we created this comfy loveseat with durable beige polyester fabric.</p>
+                <button class="btn btn-dark btn-sm w-100 mb-2 add-to-cart">Add to cart</button>
+                <button class="btn btn-link text-dark text-decoration-none p-0 small w-100 text-center toggle-wishlist"><i class="bi bi-heart me-1"></i> Wishlist</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-6">
+        <div class="card h-100 border-0 product-card">
+          <div class="row g-0 align-items-center">
+            <div class="col-5 position-relative bg-light rounded p-3 text-center">
+              <img src="https://m.media-amazon.com/images/I/71IkCzYSgbL._AC_UF1000,1000_QL80_.jpg" class="img-fluid rounded" alt="Bamboo Basket">
+            </div>
+            <div class="col-7">
+              <div class="card-body">
+                <div class="text-warning mb-1"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                <h5 class="card-title fw-bold fs-6 mb-1">Bamboo Basket</h5>
+                <p class="mb-2 fw-semibold">$9.99</p>
+                <p class="card-text text-muted small">With its soft shape and color, this spacious basket is just as decorative wherever you choose to put it.</p>
+                <button class="btn btn-dark btn-sm w-100 mb-2 add-to-cart">Add to cart</button>
+                <button class="btn btn-link text-dark text-decoration-none p-0 small w-100 text-center toggle-wishlist"><i class="bi bi-heart me-1"></i> Wishlist</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-6">
+        <div class="card h-100 border-0 product-card">
+          <div class="row g-0 align-items-center">
+            <div class="col-5 position-relative bg-light rounded p-3 text-center">
+              <img src="https://www.ikea.com/eg/en/images/products/gladom-tray-table-black__0567223_pe664991_s5.jpg?f=s" class="img-fluid rounded" alt="Black Tray table">
+            </div>
+            <div class="col-7">
+              <div class="card-body">
+                <div class="text-warning mb-1"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                <h5 class="card-title fw-bold fs-6 mb-1">Black Tray table</h5>
+                <p class="mb-2 fw-semibold">$19.19</p>
+                <p class="card-text text-muted small">Easy to love at a price that's hard to resist. Buy one or buy a few and make every space where you sit more convenient.</p>
+                <button class="btn btn-dark btn-sm w-100 mb-2 add-to-cart">Add to cart</button>
+                <button class="btn btn-link text-dark text-decoration-none p-0 small w-100 text-center toggle-wishlist"><i class="bi bi-heart me-1"></i> Wishlist</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center my-5">
+      <button class="btn btn-outline-dark rounded-pill px-4 btn-sm">Show more</button>
+    </div>
+  </main>
+  <section class="newsletter-section py-5 bg-light border-top border-bottom">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-3 text-center d-none d-md-block">
+          <img src="https://imagedelivery.net/NWMr2MtVTPg2-t9Kz85Cwg/32b7af12-83cf-44f5-137c-70488a23b900/public" class="img-fluid rounded" alt="Furniture Side">
+        </div>
+        <div class="col-md-6 text-center my-3 my-md-0">
+          <h2 class="fw-bold mb-2">Join Our Newsletter</h2>
+          <p class="text-muted small mb-4">Sign up for deals, new products and promotions</p>
+          <form class="d-flex max-w-400 mx-auto border-bottom border-dark pb-1" id="newsletterForm">
+            <i class="bi bi-envelope text-muted me-2 align-self-center"></i>
+            <input type="email" class="form-control border-0 bg-transparent p-0 shadow-none" placeholder="Email address" required>
+            <button class="btn btn-link text-muted text-decoration-none p-0 fw-semibold ms-2" type="submit">Signup</button>
+          </form>
+        </div>
+        <div class="col-md-3 text-center d-none d-md-block">
+          <img src="https://eg-rv.homzmart.net/catalog/product/e/l/elostazle134.jpg" class="img-fluid rounded" alt="Armchair Side">
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="bg-dark text-white pt-5 pb-3">
+    <div class="container">
+      <div class="row pb-4 border-bottom border-secondary align-items-center">
+        <div class="col-md-6 mb-3 mb-md-0">
+          <span class="fs-5 fw-bold me-3">VisioCreate.</span>
+          <small class="text-muted border-start border-secondary ps-3">Gift & Decoration Store</small>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item me-3"><a href="#" class="text-white text-decoration-none small">Home</a></li>
+            <li class="list-inline-item me-3"><a href="#" class="text-white text-decoration-none small">Shop</a></li>
+            <li class="list-inline-item me-3"><a href="#" class="text-white text-decoration-none small">Product</a></li>
+            <li class="list-inline-item me-3"><a href="#" class="text-white text-decoration-none small">Blog</a></li>
+            <li class="list-inline-item"><a href="#" class="text-white text-decoration-none small">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center pt-3 small text-muted">
+        <p class="mb-2 mb-md-0">&copy; 2023 VisioCreate. All rights reserved &nbsp;|&nbsp; <a href="#" class="text-white text-decoration-none">Privacy Policy</a> &nbsp;|&nbsp; <a href="#" class="text-white text-decoration-none">Terms of Use</a></p>
+        <div class="d-flex gap-3 fs-6">
+          <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-white"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/Shop3.js"></script>
+</body>
+</html>

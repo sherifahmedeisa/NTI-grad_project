@@ -1,0 +1,85 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #ffffff;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.nav-link {
+  color: #141718;
+  font-weight: 500;
+}
+.sidebar {
+  background-color: #f3f5f7;
+  border-radius: 12px;
+  padding: 24px;
+}
+.sidebar .nav-link {
+  color: #6c7275;
+  padding: 10px 0;
+}
+.sidebar .nav-link.active {
+  color: #141718;
+  font-weight: 600;
+  border-bottom: 1px solid #141718;
+}
+.profile-img-container {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 12px;
+}
+.profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.camera-btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: #141718;
+  color: #fff;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+.wishlist-table th {
+  font-weight: 600;
+  color: #6c7275;
+  border-bottom: 1px solid #e8ecef;
+  padding-bottom: 12px;
+}
+.wishlist-table td {
+  vertical-align: middle;
+  padding: 16px 0;
+  border-bottom: 1px solid #e8ecef;
+}
+.btn-dark-custom {
+  background-color: #141718;
+  color: #fff;
+  border-radius: 8px;
+  padding: 8px 24px;
+  font-weight: 500;
+  border: none;
+}
+.btn-dark-custom:hover {
+  background-color: #343839;
+}
+.remove-btn {
+  cursor: pointer;
+  color: #6c7275;
+  font-size: 18px;
+}
+.remove-btn:hover {
+  color: #141718;
+}
+footer {
+  background-color: #141718;
+  color: #6c7275;
+}
