@@ -1,12 +1,636 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NTI GP</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    
-    <a href=""></a>
+    <!-- Home-page -->
+    <div class="top d-flex justify-content-center gap-2 align-items-center ">
+        <i class="fa-solid fa-ticket-simple p-1"></i>
+        <p class="pt-3">30% off storewide-limtied time!</p>
+        <span><a href="#" class="shop-link text-decoration-underline  fw-semibold">Shop Now <i
+                    class="bi bi-arrow-right"></i> &rarr;
+            </a></span>
+    </div>
+    <!------------------- navbar --------------->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">VisioCreate</a>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="d-flex align-items-center gap-3">
+                <a href="#" class=" d-none d-md-block text-decoration-none text-dark"><i
+                        class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="sign in.html" class="d-none d-md-block text-decoration-none text-dark"><i
+                        class="fa-regular fa-circle-user "></i></a>
+                <a href="#offcanvasExample" class="text-decoration-none text-dark position-relative"
+                    data-bs-toggle="offcanvas"><i class="fa-solid fa-store"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark"
+                        style="font-size: 0.6rem;">2</span></a>
+
+            </div>
+        </div>
+    </nav>
+    <!------------------ slide-section -------------->
+    <div id="carouselExampleDark" class=" container carousel  slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <img src="image/slide1.jpg" class="d-block   w-100" alt="">
+                <div class="carousel-caption d-md-block text-white ms-2 top-0 col-6">
+                    <h5>Tansform Your Space,Elevate Your Life</h5>
+                    <p>visiocreat is a gift & decorations stare based in HCMC, Vietnam
+                        Est Scince 2019</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="image/slide2.jfif" class="d-block  w-100" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="image/slide3.jfif" class="d-block  w-100" alt="">
+                <div class="carousel-caption  d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+            <button class="carousel-control-prev custom-carousel-btn" type="button"
+                data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                <i class="fa-solid fa-arrow-left-long text-dark"></i>
+            </button>
+            <button class="carousel-control-next custom-carousel-btn" type="button"
+                data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                <i class="fa-solid fa-arrow-right text-dark"></i>
+            </button>
+        </div>
+
+    </div>
+    <section class="category-section py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6 col-12">
+                    <div class="category-card  d-felx justify-content-between p-4">
+                        <div class="card-content">
+                            <h3 class="fw-bold mb-2">Living Room</h3>
+                            <a href="#" class="shop-link text-decoration-underline text-dark fw-semibold">Shop Now <i
+                                    class="bi bi-arrow-right"></i> &rarr;
+                            </a>
+
+                        </div>
+                        <div class="text-center mt-3">
+                            <img src="image/chair.jfif" alt="" class="h-100 w-100">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 ">
+                    <div class="category-card p-4 mb-5 col-12">
+                        <div class="row d-felx justify-content-between align-items-end">
+                            <div class="col-md-6 col-6">
+                                <div class="card-content ">
+                                    <h3 class="fw-bold ">Bedroom</h3>
+                                    <a href="#" class="shop-link text-decoration-underline text-dark fw-semibold">Shop Now <i
+                                            class="bi bi-arrow-right"></i> &rarr;
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-6">
+                                <div class=" text-center">
+                                    <img src="image/images (3).jfif" alt="" class="w-100 ">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="category-card p-4 mt-1 col-12">
+                        <div class="row d-felx justify-content-between align-items-end">
+                            <div class="col-md-6 col-6">
+                                <div class="card-content">
+                                    <h3 class="fw-bold ">Kitchen</h3>
+                                    <a href="#" class="shop-link text-decoration-underline text-dark fw-semibold">Shop Now <i
+                                            class="bi bi-arrow-right"></i> &rarr;
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-6">
+                                <div class=" text-center">
+                                    <img src="image/toster.jfif" alt="" class="w-100 ">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--------------- offcanvas ------------->
+    <div class="container offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Cart</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class=" row d-flex justify-content-between cart-item">
+            <div class=" bg-offcanvas col-4 ">
+                <img src="image/images (5).jfif" alt="" class=" w-100 ">
+            </div>
+            <div class="col-md-4">
+                <span class="fw-bold">Tray Table</span>
+                <span>Color: Black</span>
+                <div class="cart">
+                    <div class=" px-2 py-1 border rounded-1 mb-2 d-inline-flex align-items-center control">
+                        <button class="p-0 border-0 text-dark btn decrease">-</button>
+                        <span class="fw-semibold mx-2 value">2</span>
+                        <button class="p-0 border-0 text-dark btn increase">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex flex-column align-items-end">
+                <span>$19.99</span>
+                <span><i class="fa-solid fa-xmark"></i></span>
+            </div>
+
+        </div>
+        <div class=" row d-flex justify-content-between cart-item">
+            <div class=" bg-offcanvas col-4 ">
+                <img src="image/images (6).jfif" alt="" class=" w-100 ">
+            </div>
+            <div class="col-md-4">
+                <span class="fw-bold">Tray Table</span>
+                <span>Color: Red</span>
+                <div class="cart">
+                    <div class=" px-2 py-1 border rounded-1 d-inline-block align-items-center">
+                        <button class="p-0 border-0 text-dark btn decrease">-</button>
+                        <span class="fw-semibold mx-2 value">2</span>
+                        <button class="p-0 border-0 text-dark btn increase">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex flex-column align-items-end">
+                <span class="price" data-price="$19.99">$19.99</span>
+                <span><i class="fa-solid fa-xmark"></i></span>
+            </div>
+
+        </div>
+        <div class=" row d-flex justify-content-between cart-item">
+            <div class=" bg-offcanvas col-4 ">
+                <img src="image/table lamp.jfif" alt="" class=" w-100 ">
+            </div>
+            <div class="col-md-4">
+                <span class="fw-bold">Tray Table</span>
+                <span>Color: Gold</span>
+                <div class="cart">
+                    <div class="add-del px-2 py-1 border rounded-1 d-inline-block align-items-center">
+                        <button class="p-0 border-0 text-dark btn decrease" >-</button>
+                        <span class="fw-semibold mx-2 value">2</span>
+                        <button class="p-0 border-0 text-dark btn increase">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex flex-column align-items-end">
+                <span class="price" data-price="$39.99">$39.00</span>
+                <span><i class="fa-solid fa-xmark"></i></span>
+            </div>
+        </div>
+        <hr class="border-2">
+        <div class="row margin-top">
+            <div class="col-6">
+                <span class="fs-4" >Subtotal</span>
+            </div>
+            <div class="col-6 d-flex justify-content-end align-items-end">
+                <span class="fw-bold " id="Subtotal">$99.00</span>
+            </div>
+        </div>
+        <hr class="border-2">
+        <div class="row ">
+            <div class="col-6">
+                <span class="fs-3" >Total</span>
+            </div>
+            <div class="col-6 d-flex justify-content-end align-items-end">
+                <span class="fw-bold " id="Total">$234.00</span>
+            </div>
+        </div>
+        <div class="row m-1">
+            <div class="bg-dark border rounded-2 text-center p-1">
+                <button class="bg-dark text-center border-0 text-white p-2">Checkout</button>
+            </div>
+        </div>
+        <div class="row m-1">
+            <div class=" text-center">
+                <a href="" class="text-decoration-underline fw-bold text-decoration-none text-dark">View Cart</a>
+            </div>
+        </div>
+
+    </div>
+    <!------------------ new-arrivals ------------------->
+    <section>
+        <div class="container">
+            <div class="d-flex justify-content-between">
+                <p class="fs-4 ">NEW Arrivals</p>
+                <a href="#" class="shop-link text-decoration-underline text-dark fw-semibold text-decoration-underline">More
+                    Product <i class="bi bi-arrow-right"></i> &rarr;
+                </a>
+            </div>
+            <div class="row g-4 over-flow">
+                <div class="col-md-3">
+                    <div class=" card-box">
+                        <div class="badges">
+                            <span class="border bg-white rounded-2 p-1">NEW</span>
+                            <span class="bg-success p-1 border rounded-2">-50%</span>
+                        </div>
+                        <button class="heart-btn"><i class="far fa-heart"></i></button>
+                        <div class="img-wrap">
+                            <img src="image/sofa2.jfif" alt="">
+                        </div>
+                        <button class="text-center text-white p-1 bg-info w-75 mt-3">Add to Cart</button>
+                    </div>
+                    <div>
+                        <div class="text-warning fs-3">*****</div>
+                        <h5>Loveseat sofa</h5>
+                        <div>
+                            <span class="fw-bold">$199.00</span>
+                            <span>$400.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" col-md-3">
+                    <div class="card-box">
+                        <div class="badges">
+                            <span class="border bg-white rounded-2 p-1">NEW</span>
+                            <span class="bg-success p-1 border rounded-2">-50%</span>
+                        </div>
+                        <div class="img-wrap">
+                            <img src="image/table lamp1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="text-warning fs-3">*****</div>
+                        <h5>Table Lamp</h5>
+                        <div>
+                            <span class="fw-bold">$24.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card-box">
+                        <div class="badges">
+                            <span class="border bg-white rounded-2 p-1">NEW</span>
+                            <span class="bg-success p-1 border rounded-2">-50%</span>
+                        </div>
+                        <div class="img-wrap">
+                            <img src="image/table lamp.jfif" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="text-warning fs-3">*****</div>
+                        <h5>Beige Table Lamp</h5>
+                        <div>
+                            <span class="fw-bold">$24.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-md-3">
+                    <div class="card-box">
+                        <div class="badges">
+                            <span class="border bg-white rounded-2 p-1 ">NEW</span>
+                            <span class="bg-success p-1 border rounded-2">-50%</span>
+                        </div>
+                        <div class="img-wrap">
+                            <img src="image/bamboo.jfif" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="text-warning fs-3">*****</div>
+                        <h5>Bamboo basket</h5>
+                        <div>
+                            <span class="fw-bold">$24.99</span>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-3">
+                    <div class="card-box">
+                        <div class="badges">
+                            <span class="border bg-white rounded-2 p-1">NEW</span>
+                            <span class="bg-success p-1 border rounded-2">-50%</span>
+                        </div>
+                        <div class="img-wrap">
+                            <img src="image/table lamp.jfif" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="text-warning fs-3">*****</div>
+                        <h5>Beige Table Lamp</h5>
+                        <div>
+                            <span class="fw-bold">$24.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-md-3">
+                    <div class="card-box">
+                        <div class="badges">
+                            <span class="border bg-white rounded-2 p-1 ">NEW</span>
+                            <span class="bg-success p-1 border rounded-2">-50%</span>
+                        </div>
+                        <div class="img-wrap">
+                            <img src="image/bamboo.jfif" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="text-warning fs-3">*****</div>
+                        <h5>Bamboo basket</h5>
+                        <div>
+                            <span class="fw-bold">$24.99</span>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-3">
+                    <div class="card-box">
+                        <div class="badges">
+                            <span class="border bg-white rounded-2 p-1">NEW</span>
+                            <span class="bg-success p-1 border rounded-2">-50%</span>
+                        </div>
+                        <div class="img-wrap">
+                            <img src="image/table lamp.jfif" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="text-warning fs-3">*****</div>
+                        <h5>Beige Table Lamp</h5>
+                        <div>
+                            <span class="fw-bold">$24.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-md-3">
+                    <div class="card-box">
+                        <div class="badges">
+                            <span class="border bg-white rounded-2 p-1">NEW</span>
+                            <span class="bg-success p-1 border rounded-2">-50%</span>
+                        </div>
+                        <div class="img-wrap">
+                            <img src="image/table lamp1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="text-warning fs-3">*****</div>
+                        <h5>Table Lamp</h5>
+                        <div>
+                            <span class="fw-bold">$24.99</span>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+    </section>
+    <!----------------- icons ------------>
+    <section>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-3 col-6">
+                    <div class="p-4  Pricing">
+                        <i class="fa-regular fa-truck fa-xl"></i>
+                        <h6 class="fw-bold">Free Shipping</h6>
+                        <span>Order above $200</span>
+
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="p-4  Pricing">
+                        <i class="fa-solid fa-money-bill-1 fa-xl"></i>
+                        <h6 class="fw-bold">Money-Back</h6>
+                        <span>30 dayes guarantee</span>
+
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="p-4  Pricing">
+                        <i class="fa-solid fa-lock fa-xl"></i>
+                        <h6 class="fw-bold">Secure Payments</h6>
+                        <span>Secured by Strip</span>
+
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="p-4  Pricing">
+                        <i class="fa-solid fa-phone fa-xl"></i>
+                        <h6 class="fw-bold">24/7 Support</h6>
+                        <span>Phone and Email support</span>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--------------- HUNDREDS ----------->
+    <section>
+        <div class="row g-0 mt-5">
+            <div class="col-md-6 col-12 ">
+                <div class="sale-img">
+                    <img src="image/slide2.jfif" alt="">
+                </div>
+            </div>
+            <div class="col-md-6 col-12">
+                <div class="card-sale">
+                    <span class="text-primary mb-3 fw-bold">SALE UP TO 35% OFF</span>
+                    <h4 class="fs-1">HUNDRES of NEW lower Price!</h4>
+                    <p>it's more affordable than ever to give everyroom in your home a stylish makeover</p>
+                    <a href="#"
+                        class="shop-link text-decoration-none text-dark fw-semibold text-decoration-underline">Shop
+                        Now
+                        <i class="bi bi-arrow-right"></i> &rarr;
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--------------- Articles ------------->
+    <section>
+        <div class="container">
+            <div class="d-flex justify-content-between mt-4">
+                <p class="fs-4 ">Articles</p>
+                <a href="#" class="shop-link text-decoration-none text-dark fw-semibold text-decoration-underline">More
+                    Articles <i class="bi bi-arrow-right"></i> &rarr;
+                </a>
+            </div>
+            <div class="row g-3 pb-3">
+                <div class="col-md-4 col-12 mb-5">
+                    <div class="article-img ">
+                        <img src="image/libaray.jfif" alt="" class="w-100 border rounded-4">
+                    </div>
+                    <div class=" mb-3">
+                        <p class=" fw-bold mb-2 pt-2">7 ways to decor your home </p>
+                        <a href="#"
+                            class="shop-link text-decoration-none text-dark fw-semibold text-decoration-underline">Read
+                            More
+                            <i class="bi bi-arrow-right"></i> &rarr;
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 mb-5">
+                    <div class="article-img">
+                        <img src="image/_.jpg" alt="" class="w-100 border rounded-4">
+                    </div>
+                    <div class="mb-3">
+                        <p class=" fw-bold mb-2 pt-2">Kitchen organization </p>
+                        <a href="#"
+                            class="shop-link  text-decoration-none text-dark fw-semibold text-decoration-underline">Read
+                            More
+                            <i class="bi bi-arrow-right"></i> &rarr;
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 mb-5">
+                    <div class="article-img">
+                        <img src="image/bed room.jfif" alt="" class="w-100 border rounded-4">
+                    </div>
+                    <div class="mb-3">
+                        <p class="fw-bold mb-2 pt-2"> Decor your bedroom</p>
+                        <a href="#" class="shop-link  text-dark fw-semibold text-decoration-underline">Read
+                            More
+                            <i class="bi bi-arrow-right"></i> &rarr;
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--------------- join ------------->
+    <section>
+        <div class=" row join d-flex justify-content-between align-items-center mt-4 m-0 p-0">
+            <div class="col-md-3 join-img d-none d-md-block  p-0">
+                <img src="image/images (2).jfif" alt="" class="translate-left">
+            </div>
+            <div class="col-md-6 col-12 text-center ">
+                <p class="fw-bold fs-4">
+                    Join Our Newsletter
+                </p>
+                <p>Sign up or deals, new products and promotins</p>
+                <form id="loginform">
+                    <div class="input-group mb-3">
+                        <i class="fa-solid fa-envelope p-3"></i><input type="email" class="form-control bg-transparent border-0" placeholder="Email adderss"
+                            aria-label="Email adderss" id="userEmail" aria-describedby="button-addon2">
+                        <button class="btn btn-outline-secondary text-secondary border-0" type="button"
+                            id="button-addon2">Sign Up</button>
+                    </div>
+                </form>
+                <hr class="border-2">
+            </div>
+            <div class="col-md-3 d-none d-md-block join-img p-0 ">
+                <img src="image/images (1).jfif" alt="" class="translate-right">
+            </div>
+
+        </div>
+    </section>
+    <!------------------ footer ----------->
+    <section>
+        <div class="bg-footer text-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-12 text-center d-md-flex p-2">
+                        <span class="fw-bold text-white">Visiocreate</span>
+                        <div class="vr text-secondary mt-2 ms-4 me-4" style="height: 20px;"></div>
+                        <p class="text-white-50">Gift & Decoration Store</p>
+                    </div>
+                    <div
+                        class="col-md-6 col-12  d-flex flex-column flex-md-row justify-content-end align-items-center gap-3">
+                        <a href="#" class="text-decoration-none  text-white-50">Home</a>
+                        <a href="#" class="text-decoration-none  text-white-50">Shop</a>
+                        <a href="#" class="text-decoration-none text-white-50">Product</a>
+                        <a href="#" class="text-decoration-none text-white-50">Blog</a>
+                        <a href="#" class="text-decoration-none text-white-50">contact us</a>
+
+                    </div>
+                </div>
+                <hr class="border-2 text-white">
+                <div class="row text-white d-flex  align-items-center flex-column-reverse flex-md-row text-center gy-3">
+                    <div class="col-md-6 col-12 flex-column-reverse flex-md-row align-items-center d-flex gap-3">
+                        <p class="mb-0 text-white-50">Copyright c 2024 visicreate All rights reserved</p>
+                        <div class="row">
+                            <div class="col-12 d-flex gap-2 p-2">
+                                <span>Privacy policy</span>
+                                <span>Terms of life</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12 d-flex justify-content-md-end justify-content-center gap-2">
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-square-facebook"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
