@@ -12,195 +12,309 @@
         crossorigin="anonymous" referrerpolicy="no-referrer">
 
     <link rel="stylesheet" href="css/style.css">
-
 </head>
 
 <body>
 
-    <section class="container tex ">
+    <section class="container">
         <div class="text-center m-5 ">
 
-            <h class=" fs-1 fw-bold ">cart</h>
+            <h class=" fs-1 fw-bold ">Check out</h>
 
         </div>
         <div class="row m-5">
             <div class="col-11 col-md-4 d-flex  ">
-                <img src="images/1-num.png " class="w-25 h-75" alt="">
-                <h3 class="m-4">
+                <img src="images/success .png " class="w-25 h-75" alt="">
+                <h3 class="m-4 text-success ">
                     Shopping cart
                 </h3>
             </div>
-            <div class="col-11 col-md-4 d-flex opacity-25 ">
-                <img src="images/2-num.png " class="w-25 h-75" alt="">
-                <h3 class="m-4">
-                    Shopping cart
+            <div class="col-11 col-md-4 d-flex   ">
+                <img src="images/2-num.png " class=" w-25 h-75" alt="">
+                <h3 class="m-4 d-none d-lg-inline">
+                    Check out details
                 </h3>
             </div>
             <div class="col-11 col-md-4 d-flex  opacity-25 ">
-                <img src="images/3-num.png " class="w-25 h-75" alt="">
-                <h3 class="m-4">
-                    Shopping cart
+                <img src="images/3-num.png " class=" d-none d-lg-inline w-25 h-75" alt="">
+                <h3 class="m-4  d-none d-lg-inline">
+                    Order complete
                 </h3>
             </div>
         </div>
+        <div class="row">
+            <div class="col-md-6 col-12">
+                <div class="border border-dark rounded-3 m-3">
+                    <h5 class="fw-bold m-4">Contact Information</h5>
+                    <div class="row m-3">
+                        <div class="col">
+                            <label class="form-label text-secondary">First Name</label>
 
+                            <input type="text" class="form-control" id="firstName" placeholder="First name"
+                                aria-label="First name">
+                                <small class=" text-danger m-4  d-none" id="firstNameValidationMessage">
+                                enter a valid First name</small>
+                        </div>
+                        <div class="col">
+                            <label class="form-label text-secondary">Last Name</label>
 
-
-        <div class="row my-5">
-            <div class="col-12 col-md-8">
-                <div class="row ">
-
-                    <h4 class="col-12 col-md-5 ">
-                        Product
-                    </h4>
-                    <div class="col-md-7 row">
-                        <h4 class="col-md-4 ">
-                            Quantity
-                        </h4>
-                        <h4 class="col-md-4 ">
-                            Price
-                        </h4>
-                        <h4 class="col-md-4">
-                            Subtoatal
-                        </h4>
+                            <input type="text" class="form-control" id="lastName" placeholder="Last name"
+                                aria-label="Last name">
+                                 <small class=" text-danger m-4  d-none" id="lastNameValidationMessage">
+                                enter a valid Last name</small>
+                        </div>
+                    </div>
+                    <div class="row m-3">
+                        <div class="col-12 mt-2">
+                            <label class="form-label text-secondary">Phone</label>
+                            <input type="text" class="form-control" id="phone" placeholder="Phone number">
+                             <small class=" text-danger m-4  d-none" id="phoneValidationMessage">
+                                enter a valid phone number</small>
+                        </div>
+                        <div class="col-12 mt-2">
+                            <label class="form-label text-secondary">Email Address</label>
+                            <input type="email" class="form-control" id="email" placeholder=" YourEmail ">
+                             <small class=" text-danger m-4  d-none" id="emailValidationMessage">
+                                enter a valid email</small>
+                        </div>
                     </div>
                 </div>
-                <hr class="border-2">
-                <div class="row text-center">
+                <div class="border border-dark rounded-3 m-3">
+                    <h5 class="fw-bold m-4">Shipping Address</h5>
 
-                    <div class="col-12 col-md-5  row">
-                        <div class="col-4">
+                    <form class="row g-3">
+
+                        <div class="col-11 m-auto">
+                            <label for="inputAddress" class="form-label text-secondary m-2">Address*</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                            <small class=" text-danger m-4  d-none" id="addressValidationMessage">
+                                enter a valid address
+                            </small>
+                        </div>
+                        <div class="col-11 m-auto">
+                            <label for="inputAddress2" class="form-label text-secondary m-2">Country*</label>
+                            <select id="inputState" class="form-select">
+                                <option selected>Country</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+
+                        <div class="col-11 m-auto">
+                            <label for="inputAddress" class="form-label text-secondary m-2">Town/City*</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                            <small class=" text-danger m-4  d-none" id="cityValidationMessage">
+                                enter a valid city
+                            </small>
+                        </div>
+                        <div class="col-md-5 m-auto">
+                            <label for="inputCity" class="form-label text-secondary m-2">City</label>
+                            <input type="text" class="form-control" id="inputCity" placeholder="City">
+                            
+                        </div>
+
+                        <div class="col-md-5 m-auto">
+                            <label for="inputZip" class="form-label text-secondary m-2">Zip Code</label>
+                            <input type="text" class="form-control" id="inputZip" placeholder="Zip Code">
+                        </div>
+                        <div class="col-11 m-auto my-4">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label text-secondary" for="gridCheck">
+                                    Use different billing address (optional)
+                                </label>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="border border-dark rounded-3 m-3">
+                    <h5 class="fw-bold m-4">Payment Method</h5>
+                    <div class="row m-3">
+                        <div class="col-12 mt-2">
+                            <div class="form-check border border-black p-2 bg-body-tertiary   m-3">
+                                <input class="form-check-input ms-3 mb-0 " id="creditCard" type="radio" value="option1"
+                                    checked>
+                                <label class=" ms-2 mb-0 " for="creditCard">
+                                    pay by credit card
+                                </label>
+                                <span class=" float-end   "><i class="fa-regular fa-credit-card"></i></span>
+
+                            </div>
+                            <div class="form-check border border-black p-2     m-3">
+                                <input class="form-check-input ms-3 mb-0 " id="paypal" type="radio" value="option1">
+                                <label class=" ms-2 mb-0 " for="paypal">
+                                    paypal
+                                </label>
+                                <span class=" float-end   "><i class="fa-brands fa-paypal"></i></span>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row m-3">
+                        <div class="col-12 mt-2">
+                            <label class="form-label text-secondary">Card Number</label>
+                            <input type="text" class="form-control" id="cardNumber" placeholder="Card Number">
+                            <small class="text-danger m-4 d-none" id="cardNumberValidationMessage">
+                                enter a valid card number
+                            </small>
+                        </div>
+                        <div class="col-6 mt-2">
+                            <label class="form-label text-secondary">Expiration Date</label>
+                            <input type="text" class="form-control" id="expirationDate" placeholder="MM/YY">
+                            <small class="text-danger m-4 d-none" id="expirationDateValidationMessage">
+                                enter a valid expiration date
+                            </small>
+                        </div>
+
+                        <div class="col-6 mt-2">
+                            <label class="form-label text-secondary">CVC</label>
+                            <input type="text" class="form-control" id="cvc" placeholder="CVC">
+                            <small class="text-danger m-4 d-none" id="cvcValidationMessage">
+                                enter a valid CVC
+                            </small>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="d-grid gap-2 col-11 mb-5 m-auto">
+                    <button class="btn btn-dark p-2 fs-5" id="placeOrderButton" type="button">Place Order</button>
+                </div>
+
+            </div>
+
+            <div class="col-md-6 col-12">
+                <div class="border border-dark rounded-3 m-3">
+                    <h5 class="fw-bold m-4">Order Summary</h5>
+                    <div class="col-12 my-5  row">
+                        <div class="col-3">
                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZPZ5Eo3g3NnkUa_-bG3Ypz86_jX4zCLyfYKvIuMyV3Q&s=10"
                                 alt="" class="w-100">
                         </div>
-                        <div class="col-4">
+                        <div class="col-md-4 col-5 text-start row ">
                             <h6>Tray Table</h6>
                             <p class="text-secondary">color: <span>black</span></p>
-                            <button type="button" class="btn-close float-start" aria-label="Close"> </button>
-                            <label for="">Remove</label>
+                            <div class="btn-group btn-group-sm col-md-4 p-3 ">
+                                <button type="button"
+                                    class="btn btn-outline-secondary border-end-0 d-none d-lg-inline ">-</button>
+                                <span
+                                    class="btn btn-outline-secondary border-end-0 border-start-0 d-none d-lg-inline ">2</span>
+                                <button type="button"
+                                    class="btn btn-sm btn-outline-secondary border-start-0 d-none d-lg-inline ">+</button>
+                            </div>
+
+
                         </div>
-                    </div>
-                    <div class="col-md-7 row ">
-                        <div class="btn-group btn-group-sm col-md-4 p-5 ">
-                            <button type="button" class="btn btn-outline-secondary border-end-0">-</button>
-                            <span class="btn btn-outline-secondary border-end-0 border-start-0 ">2</span>
-                            <button type="button" class="btn btn-sm btn-outline-secondary border-start-0">+</button>
+                        <div class="col-4 text-end">
+                            <span class="fw-bold  ">$ 50.00</span>
                         </div>
 
-                        <div class="col-md-4  m-auto">
-                            <p class="fs-4">$<span> 10.00</span></p>
-                        </div>
-                        <div class="col-md-4 m-auto ">
-                            <p class="fs-4">$<span> 20.00</span></p>
-                        </div>
 
                     </div>
-                </div>
-                <hr class="border-1">
-                <div class="row text-center">
-
-                    <div class="col-12 col-md-5  row">
-                        <div class="col-4">
+                    <div class="col-12 my-5  row">
+                        <div class="col-3">
                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZPZ5Eo3g3NnkUa_-bG3Ypz86_jX4zCLyfYKvIuMyV3Q&s=10"
                                 alt="" class="w-100">
                         </div>
-                        <div class="col-4">
+                        <div class="col-md-4 col-5 text-start row ">
                             <h6>Tray Table</h6>
                             <p class="text-secondary">color: <span>black</span></p>
-                            <button type="button" class="btn-close float-start" aria-label="Close"> </button>
-                            <label for="">Remove</label>
+                            <div class="btn-group btn-group-sm col-md-4 p-3 ">
+                                <button type="button"
+                                    class="btn btn-outline-secondary border-end-0 d-none d-lg-inline ">-</button>
+                                <span
+                                    class="btn btn-outline-secondary border-end-0 border-start-0 d-none d-lg-inline ">2</span>
+                                <button type="button"
+                                    class="btn btn-sm btn-outline-secondary border-start-0 d-none d-lg-inline ">+</button>
+                            </div>
+
+
                         </div>
-                    </div>
-                    <div class="col-md-7 row ">
-                        <div class="btn-group btn-group-sm col-md-4 p-5 ">
-                            <button type="button" class="btn btn-outline-secondary border-end-0">-</button>
-                            <span class="btn btn-outline-secondary border-end-0 border-start-0 ">2</span>
-                            <button type="button" class="btn btn-sm btn-outline-secondary border-start-0">+</button>
+                        <div class="col-4 text-end">
+                            <span class="fw-bold  ">$ 50.00</span>
                         </div>
 
-                        <div class="col-md-4  m-auto">
-                            <p class="fs-4">$<span> 10.00</span></p>
-                        </div>
-                        <div class="col-md-4 m-auto ">
-                            <p class="fs-4">$<span> 20.00</span></p>
-                        </div>
 
                     </div>
-                </div>
-                <hr class="border-1">
-                <div class="row text-center">
-
-                    <div class="col-12 col-md-5  row">
-                        <div class="col-4">
+                    <div class="col-12 my-5  row">
+                        <div class="col-3">
                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZPZ5Eo3g3NnkUa_-bG3Ypz86_jX4zCLyfYKvIuMyV3Q&s=10"
                                 alt="" class="w-100">
                         </div>
-                        <div class="col-4">
+                        <div class="col-md-4 col-5 text-start row ">
                             <h6>Tray Table</h6>
                             <p class="text-secondary">color: <span>black</span></p>
-                            <button type="button" class="btn-close float-start" aria-label="Close"> </button>
-                            <label for="">Remove</label>
+                            <div class="btn-group btn-group-sm col-md-4 p-3 ">
+                                <button type="button"
+                                    class="btn btn-outline-secondary border-end-0 d-none d-lg-inline ">-</button>
+                                <span
+                                    class="btn btn-outline-secondary border-end-0 border-start-0 d-none d-lg-inline ">2</span>
+                                <button type="button"
+                                    class="btn btn-sm btn-outline-secondary border-start-0 d-none d-lg-inline ">+</button>
+                            </div>
+
+
                         </div>
-                    </div>
-                    <div class="col-md-7 row ">
-                        <div class="btn-group btn-group-sm col-md-4 p-5 ">
-                            <button type="button" class="btn btn-outline-secondary border-end-0">-</button>
-                            <span class="btn btn-outline-secondary border-end-0 border-start-0 ">2</span>
-                            <button type="button" class="btn btn-sm btn-outline-secondary border-start-0">+</button>
+                        <div class="col-4 text-end">
+                            <span class="fw-bold  ">$ 50.00</span>
                         </div>
 
-                        <div class="col-md-4  m-auto">
-                            <p class="fs-4">$<span> 10.00</span></p>
-                        </div>
-                        <div class="col-md-4 m-auto ">
-                            <p class="fs-4">$<span> 20.00</span></p>
-                        </div>
 
                     </div>
-                </div>
-                <hr class="border-1">
-            </div>
-            <div class="col-12 col-md-4 border border-2 p-2">
-                <h3 class="mt-4 ms-3">Cart Summry</h3>
-                <div class="form-check border p- ">
-                    <input class="form-check-input" type="radio" value="option1" checked m-auto >
-                    <label class="form-check-label p-5" >
-                        Default radio
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" value="option2">
-                    <label class="form-check-label" >
-                        Second default radio
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" value="option3" >
-                    <label class="form-check-label" >
-                        Disabled radio
-                    </label>
-                </div>
+                    <div class="row m-3">
+                        <hr class="border border-black border-1">
+                        <div class="col-10  m-auto">
+                            <input type="text" class="form-control p-2" id="formGroupExampleInput" placeholder=" input">
 
-            </div>
-            <div class="col-12 mt-5">
-                <h4>Have a coupon?</h4>
-                <p class="text-secondary">Add your code for an instant cart discount</p>
+                        </div>
+                        <div class="col-2 m-auto ">
+                            <button class="btn btn-dark p-2 fs-5" type="button">Apply</button>
+                        </div>
+                        <div class="col-6 mt-3">
 
-                <div class="input-group mb-3 w-25">
-                    <input type="text" class="form-control border-end-0 border-dark rounded-0"
-                        placeholder=" Coupon Code">
-                    <button class="btn btn-outline-secondary border-start-0 fw-bold rounded-0" type="button"
-                        id="button-addon2">Apply</button>
+                            <p> <i class="fa-solid fa-ticket me-2"></i>JenkateMW</p>
+                        </div>
+                        <div class="col-6 mt-3 text-end">
+                            <p class="text-success">-$ <span>10.00</span> [remove]</p>
+
+                        </div>
+                        <hr class="border  border-1">
+                        <div class="col-6 mt-2">
+                            <p class="">Shipping</p>
+                        </div>
+                        <div class="col-6 mt-2 text-end">
+                            <p class="fw-bold">Free</p>
+                        </div>
+                        <hr class="border  border-1">
+                        <div class="col-6 mt-2">
+                            <p class="">Subtotal</p>
+                        </div>
+                        <div class="col-6 mt-2 text-end">
+                            <p class="fw-bold ">$ 100.00</p>
+                        </div>
+                        <hr class="border  border-1">
+                        <div class="col-6 mt-2">
+                            <p class="fw-bold fs-4">Total</p>
+                        </div>
+                        <div class="col-6 mt-2 text-end">
+                            <p class="fw-bold">$ 110.00</p>
+                        </div>
+
+                    </div>
                 </div>
             </div>
+
         </div>
+
+
+
     </section>
 
-
+    <script src="js/checkOut.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
-
 </body>
 
 </html>

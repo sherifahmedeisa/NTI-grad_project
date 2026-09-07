@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <section class="container tex ">
+        <div class="text-center m-5 ">
+
+            <h class=" fs-1 fw-bold ">cart</h>
+
+        </div>
+        <div class="row m-5">
+            <div class="col-11 col-md-4 d-flex  ">
+                <img src="images/1-num.png " class="w-25 h-75" alt="">
+                <h3 class="m-4">
+                    Shopping cart
+                </h3>
+            </div>
+            <div class="col-11 col-md-4 d-flex opacity-25   ">
+                <img src="images/2-num.png " class=" w-25 h-75" alt="">
+                <h3 class="m-4 d-none d-lg-inline">
+                    Check out details
+                </h3>
+            </div>
+            <div class="col-11 col-md-4 d-flex  opacity-25 ">
+                <img src="images/3-num.png " class=" d-none d-lg-inline w-25 h-75" alt="">
+                <h3 class="m-4  d-none d-lg-inline">
+                    Order complete  
+                </h3>
+            </div>
+        </div>
+
+
+
+        <div class="row my-5">
+            <div class="col-12 col-md-8">
+                <div class="row ">
+
+                    <h4 class="col-12 col-md-5 ">
+                        Product
+                    </h4>
+                    <div class="col-md-7 row ">
+                        <h4 class="col-md-4 d-none d-lg-inline  ">
+                            Quantity
+                        </h4>
+                        <h4 class="col-md-4 d-none d-lg-inline ">
+                            Price
+                        </h4>
+                        <h4 class="col-md-4 d-none d-lg-inline ">
+                            Subtoatal
+                        </h4>
+                    </div>
+                </div>
+                <hr class="border-2">
+                <div class="row text-center itemManagement">
+
+                    <div class="col-12 col-md-5  row">
+                        <div class="col-4">
+                            <img id="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZPZ5Eo3g3NnkUa_-bG3Ypz86_jX4zCLyfYKvIuMyV3Q&s=10"
+                                alt=""  class="w-100">
+                        </div>
+                        <div class="col-md-4 col-8 text-start ">
+                            <h6 id="name">Tray Table</h6>
+                            <p class="text-secondary">color: <span id="color">black</span></p>
+                            <button type="button" id="removeButton" class="btn-close  float-end" aria-label="Close"> </button>
+                            <label class="d-none d-lg-block" for="">Remove</label>
+                            <div class="  d-lg-none btn-group btn-group btn-group-sm col-md-4 p-5 ">
+                                <button type="button" class="btn btn-outline-secondary border-end-0" id="removeone">-</button>
+                                <span class="btn btn-outline-secondary border-end-0 border-start-0 " id="quantity">2</span>
+                                <button type="button" class="btn btn-sm btn-outline-secondary border-start-0" id="addone">+</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-7 row col-6 ">
+                        <div class="btn-group btn-group-sm col-md-4 p-5 ">
+                            <button type="button"
+                                class="btn btn-outline-secondary border-end-0 d-none d-lg-inline ">-</button>
+                            <span
+                                class="btn btn-outline-secondary border-end-0 border-start-0 d-none d-lg-inline ">2</span>
+                            <button type="button"
+                                class="btn btn-sm btn-outline-secondary border-start-0 d-none d-lg-inline ">+</button>
+                        </div>
+
+
+                        <div class="col-md-4  m-auto d-none d-lg-block">
+                            <p class="fs-4">$<span> 10.00</span></p>
+                        </div>
+                        <div class="col-md-4 m-auto d-lg-block d-none">
+                            <p class="fs-4">$<span> 20.00</span></p>
+                        </div>
+
+
+                    </div>
+                </div>
+                <hr class="border-1">
+                <div class="row text-center">
+
+                    <div class="col-12 col-md-5  row">
+                        <div class="col-4">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZPZ5Eo3g3NnkUa_-bG3Ypz86_jX4zCLyfYKvIuMyV3Q&s=10"
+                                alt="" class="w-100">
+                        </div>
+                        <div class="col-md-4 col-8 text-start ">
+                            <h6>Tray Table</h6>
+                            <p class="text-secondary">color: <span>black</span></p>
+                            <button type="button" class="btn-close  float-end" aria-label="Close"> </button>
+                            <label class="d-none d-lg-block" for="">Remove</label>
+                            <div class="  d-lg-none btn-group btn-group btn-group-sm col-md-4 p-5 ">
+                                <button type="button" class="btn btn-outline-secondary border-end-0">-</button>
+                                <span class="btn btn-outline-secondary border-end-0 border-start-0 ">2</span>
+                                <button type="button" class="btn btn-sm btn-outline-secondary border-start-0">+</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-7 row col-6 ">
+                        <div class="btn-group btn-group-sm col-md-4 p-5 ">
+                            <button type="button"
+                                class="btn btn-outline-secondary border-end-0 d-none d-lg-inline ">-</button>
+                            <span
+                                class="btn btn-outline-secondary border-end-0 border-start-0 d-none d-lg-inline ">2</span>
+                            <button type="button"
+                                class="btn btn-sm btn-outline-secondary border-start-0 d-none d-lg-inline ">+</button>
+                        </div>
+
+
+                        <div class="col-md-4  m-auto d-none d-lg-block">
+                            <p class="fs-4">$<span> 10.00</span></p>
+                        </div>
+                        <div class="col-md-4 m-auto d-lg-block d-none">
+                            <p class="fs-4">$<span> 20.00</span></p>
+                        </div>
+
+
+                    </div>
+                </div>
+                <hr class="border-1">
+                <div class="row text-center">
+
+                    <div class="col-12 col-md-5  row">
+                        <div class="col-4">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZPZ5Eo3g3NnkUa_-bG3Ypz86_jX4zCLyfYKvIuMyV3Q&s=10"
+                                alt="" class="w-100">
+                        </div>
+                        <div class="col-md-4 col-8 text-start ">
+                            <h6>Tray Table</h6>
+                            <p class="text-secondary">color: <span>black</span></p>
+                            <button type="button" class="btn-close  float-end" aria-label="Close"> </button>
+                            <label class="d-none d-lg-block" for="">Remove</label>
+                            <div class="  d-lg-none btn-group btn-group btn-group-sm col-md-4 p-5 ">
+                                <button type="button" class="btn btn-outline-secondary border-end-0">-</button>
+                                <span class="btn btn-outline-secondary border-end-0 border-start-0 ">2</span>
+                                <button type="button" class="btn btn-sm btn-outline-secondary border-start-0">+</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-7 row col-6 ">
+                        <div class="btn-group btn-group-sm col-md-4 p-5 ">
+                            <button type="button"
+                                class="btn btn-outline-secondary border-end-0 d-none d-lg-inline ">-</button>
+                            <span
+                                class="btn btn-outline-secondary border-end-0 border-start-0 d-none d-lg-inline ">2</span>
+                            <button type="button"
+                                class="btn btn-sm btn-outline-secondary border-start-0 d-none d-lg-inline ">+</button>
+                        </div>
+
+
+                        <div class="col-md-4  m-auto d-none d-lg-block">
+                            <p class="fs-4">$<span> 10.00</span></p>
+                        </div>
+                        <div class="col-md-4 m-auto d-lg-block d-none">
+                            <p class="fs-4">$<span> 20.00</span></p>
+                        </div>
+
+
+                    </div>
+                </div>
+                <hr class="border-1">
+            </div>
+            <div class="col-12 col-md-4 border border-2 border-black rounded p-2">
+                <h3 class="mt-4 ms-3">Cart Summry</h3>
+                <div class="form-check border border-black p-2 bg-body-tertiary   m-3">
+                    <input class="form-check-input ms-3 mb-0 " type="radio" value="option1" checked>
+                    <label class=" ms-2 mb-0 ">
+                        Free Shipping
+
+                    </label>
+                    <span class=" float-end   ">$10.00</span>
+
+                </div>
+                <div class="form-check border p-2 m-3 ">
+                    <input class="form-check-input ms-3  " type="radio" value="option1">
+                    <label class="form-check-label   ms-1">
+                        Express Shipping
+                    </label>
+                    <span class=" float-end   ">+$10.00</span>
+
+                </div>
+                <div class="form-check border p-2 m-3  ">
+                    <input class="form-check-input ms-3  " type="radio" value="option1">
+                    <label class="form-check-label   ms-1">
+                        Pick up
+                    </label>
+                    <span class=" float-end   ">%21.00</span>
+
+                </div>
+
+                <div class="row m-3 mt-5   ">
+                    <div class="col-6 ">
+                        <h5>Subtotal</h5>
+                    </div>
+                    <div class="col-6 text-end">
+                        <h5>$<span> 20.00</span></h5>
+                    </div>
+
+
+                    <hr class="border-1 mt-5 ">
+                </div>
+
+
+                <div class="row m-3 mt-2   ">
+                    <div class="col-6 ">
+                        <h4>Total</h4>
+                    </div>
+                    <div class="col-6 text-end">
+                        <h5>$<span> 20.00</span></h5>
+                    </div>
+
+
+                </div>
+
+                <div class="d-grid gap-2 col-11 mx-auto">
+                    <button class="btn btn-dark p-2 fs-5" type="button">Checkout</button>
+                </div>
+
+            </div>
+            <div class="col-12 mt-5">
+                <h4>Have a coupon?</h4>
+                <p class="text-secondary">Add your code for an instant cart discount</p>
+
+                <div class="input-group mb-3 col-12 w-25">
+                    <input type="text" class="form-control border-end-0 border-dark rounded-0"
+                        placeholder=" Coupon Code">
+                    <button class="btn btn-outline-secondary border-start-0 fw-bold rounded-0" type="button"
+                        id="button-addon2">Apply</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/cart.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
