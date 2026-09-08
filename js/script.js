@@ -58,15 +58,31 @@ buttonInput.addEventListener("click",
         listUsers.push(user);
         console.log("Users:", listUsers)
 
+        
         emailInput.value = "";
         password.value = "";
+        window.location.href  = "index.html";
     });
 
 
 let handleError = (element, msg) => {
-    element.nextElementSibling.innerText = msg
-}
+    element.closest('.row').querySelector('small').innerText = msg
+};
 
+let togglePassword  = document.getElementById('togglePassword');
+togglePassword.addEventListener('click' , function(){
+    if(password.type === "password" ){
+        password.type = "text";
+        togglePassword.className = 'fa-regular , fa-eye' ;
+
+    } 
+    else{
+        password.type = 'password';
+        togglePassword.className = 'fa-regular , fa-eye slash';
+
+    }
+
+});
 
 
 

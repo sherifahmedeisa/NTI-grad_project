@@ -7,7 +7,7 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
         integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
@@ -28,9 +28,17 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Shop</a>
-                    </li>
+                    <div class="btn-group">
+                        <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Shop
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="">Shop1</a></li>
+                            <li><a class="dropdown-item" href="">Shop2</a></li>
+                            <li><a class="dropdown-item" href="Shop3.html">Shop3</a></li>
+                        </ul>
+                    </div>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Product</a>
                     </li>
@@ -58,7 +66,9 @@
                 <div class="col-md-6 col-12  sign-img  position-relative">
                     <img src="image/slide2.jfif" alt="" class="border rounded-2">
                     <span
-                        class="text-white position-absolute top-0 start-50 translate-middle-x mt-3 fw-bold text-center">Visicreate</span>
+                        class="text-white position-absolute top-0 start-50 translate-middle-x mt-3 fw-bold text-center">
+                        Visicreate
+                    </span>
                 </div>
                 <div class="col-md-6 col-12 d-flex flex-column justify-content-center p-4 p-md-5">
                     <span class="fw-bold">Sign in</span>
@@ -69,9 +79,12 @@
                                 class=" col-12 border-0">
                             <small class="text-danger"></small>
                         </div>
-                        <div class="border-bottom p-1 mb-4 d-flex">
-                            <input type="password" name="" id="userPasswordInput" placeholder="Password"
-                                class="sign-input border-0 col-12"><i class="fa-regular fa-eye"></i>
+                        <div class="border-bottom p-1 mb-4 row d-flex">
+                            <div class="col-12 d-flex">
+                                <input type="password" name="" id="userPasswordInput" placeholder="Password"
+                                    class="sign-input border-0 col-12">
+                                <i class="fa-regular fa-eye-slash" id="togglePassword" style="cursor: pointer;"></i>
+                            </div>
                             <small class="text-danger"></small>
                         </div>
                     </form>
@@ -88,10 +101,73 @@
                         <button class="border-0 bg-transparent" id="userButton">Sign in</button>
                     </div>
                 </div>
+                <div class="col-12 d-flex gap-3 align-items-center justify-content-center p-3">
+                    <a href="Account1.html"
+                        class="text-decoration-underline text-dark bg-primary border p-2 rounded-2">My Accout 1</a>
+                    <a href="Account2.html"
+                        class="text-decoration-underline text-dark bg-primary border p-2 rounded-2">My Accout 2</a>
+                    <a href="" class="text-decoration-underline text-dark bg-primary border p-2 rounded-2">My Accout
+                        3</a>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- footer -->
+    <section>
+        <div class="bg-footer text-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-12 text-center d-md-flex p-2">
+                        <span class="fw-bold text-white">Visiocreate</span>
+                        <div class="vr text-secondary mt-2 ms-4 me-4" style="height: 20px;"></div>
+                        <p class="text-white-50">Gift & Decoration Store</p>
+                    </div>
+                    <div
+                        class="col-md-6 col-12  d-flex flex-column flex-md-row justify-content-end align-items-center gap-3">
+                        <a href="index.html" class="text-decoration-none  text-white-50">Home</a>
+                        <div class="btn-group">
+                            <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Shop
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="">Shop1</a></li>
+                                <li><a class="dropdown-item" href="">Shop2</a></li>
+                                <li><a class="dropdown-item" href="Shop3.html">Shop3</a></li>
+                            </ul>
+                        </div>
+                        <a href="#" class="text-decoration-none text-white-50">Product</a>
+                        <a href="#" class="text-decoration-none text-white-50">Blog</a>
+                        <a href="#" class="text-decoration-none text-white-50">contact us</a>
+
+                    </div>
+                </div>
+                <hr class="border-2 text-white">
+                <div class="row text-white d-flex  align-items-center flex-column-reverse flex-md-row text-center gy-3">
+                    <div class="col-md-6 col-12 flex-column-reverse flex-md-row align-items-center d-flex gap-3">
+                        <p class="mb-0 text-white-50">Copyright c 2024 visicreate All rights reserved</p>
+                        <div class="row">
+                            <div class="col-12 d-flex gap-2 p-2">
+                                <span>Privacy policy</span>
+                                <span>Terms of life</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12 d-flex justify-content-md-end justify-content-center gap-2">
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-square-facebook"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
 </body>
 
