@@ -138,7 +138,7 @@ let validateAddress = () => {
 
 
 let validateCardNumber = () => {
-    let val = cardNumber.value.trim().replace(/\s+/g, '');
+    let val = cardNumber.value.trim();
     return val.length === 16;
 };
 
