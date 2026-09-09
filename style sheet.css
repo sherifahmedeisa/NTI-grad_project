@@ -1,0 +1,42 @@
+.img-1{
+    
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
+}
+
+.bb{
+    background-image:url("photo/tabels/WhatsApp\ Image\ 2026-08-28\ at\ 3.36.13\ PM.jpeg");
+    background-size:cover ;
+    background-repeat: repeat;
+    
+}
+
+.bbb{
+    background-image:url("photo/tabels/bg.jpeg");
+    background-size:cover ;
+    background-repeat: repeat;
+    
+}
+
+
+.btn{
+    background-color: transparent;
+    border: 1 solid black;
+}
+.int{
+    
+    border-top: none;
+     background-color: transparent;
+     border-bottom: 2 solid black;
+     border-left: 0;
+     border-top: 0;
+     border-right: 0;
+    padding: 5% 0;}
+    
+    @media (max-width: 767px){
+        .bb{
+            background-image:none;
+        }
+    }
+    

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">VisioCreate</a>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <div class="btn-group">
+                        <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Shop
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="shop.html">Shop1</a></li>
+                            <li><a class="dropdown-item" href="shop.html">Shop2</a></li>
+                            <li><a class="dropdown-item" href="Shop3.html">Shop3</a></li>
+                        </ul>
+                    </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="project.html">Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="d-flex align-items-center gap-3">
+                <a href="#" class=" d-none d-md-block text-decoration-none text-dark"><i
+                        class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="sign in.html" class="d-none d-md-block text-decoration-none text-dark"><i
+                        class="fa-regular fa-circle-user "></i></a>
+                <a href="cart.html" class="text-decoration-none text-dark position-relative"><i class="fa-solid fa-store"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark"
+                        style="font-size: 0.6rem;">0</span></a>
+
+            </div>
+        </div>
+    </nav>
+
+    <section class="container">
+
+        <div class="text-center m-5 ">
+
+            <h class=" fs-1 fw-bold ">Order Complete</h>
+
+        </div>
+        <div class="row m-5">
+            <div class="col-11 col-md-4">
+                <a href="cart.html" class="d-flex text-decoration-none text-reset align-items-center">
+                    <img src="images/success .png " class=" d-none d-lg-inline w-25 h-75" alt="">
+                    <h3 class="m-4 d-none d-lg-inline text-success">
+                        Shopping cart
+                    </h3>
+                </a>
+            </div>
+            <div class="col-11 col-md-4">
+                <a href="checkout.html" class="d-flex text-decoration-none text-reset align-items-center">
+                    <img src="images/success .png " class=" d-none d-lg-inline w-25 h-75" alt="">
+                    <h3 class="m-4 d-none d-lg-inline text-success">
+                        Check out details
+                    </h3>
+                </a>
+            </div>
+            <div class="col-11 col-md-4">
+                <a href="OrderComplete.html" class="d-flex text-decoration-none text-reset align-items-center">
+                    <img src="images/3-num.png " class=" w-25 h-75" alt="">
+                    <h3 class="m-4 ">
+                        Order complete
+                    </h3>
+                </a>
+            </div>
+        </div>
+
+        <div class="text-center m-5 shadow p-5 rounded-3 w-75 m-auto">
+            <h5 class=" text-secondary  ">Thank you! </h5>
+            <p class="fs-1 fw-bold">Your order has been received.</p>
+            <div class="row m-5 justify-content-center" id="orderItemsContainer">
+
+
+
+
+
+
+
+            </div>
+            <div class="col-md-5  text-center m-auto row">
+                <div class="col-12 col-md-6">
+                    <p class="fs-5  text-secondary">Order Number: </p>
+                </div>
+                <div class="col-12 col-md-5 fw-bold"><span id="orderNumber">123456</span></div>
+                <div class="col-12 col-md-6">
+                    <p class="fs-5 text-secondary">Date: </p>
+                </div>
+                <div class="col-12 col-md-6 fw-bold"><span id="orderDate">October 19, 2023</span></div>
+                <div class="col-12 col-md-6">
+                    <p class="fs-5 text-secondary">Total: </p>
+                </div>
+                <div class="col-12 col-md-6 fw-bold"><span id="orderTotal">$100</span></div>
+                <div class="col-12 col-md-6">
+                    <p class="fs-5 text-secondary">Payment Method: </p>
+                </div>
+                <div class="col-12 col-md-6 fw-bold"><span id="orderPayment">Credit Card</span></div>
+            </div>
+
+
+
+
+
+            <div class="col-12 col-md-6 text-center m-auto mt-5">
+                <a href="my account Ahmed.html" class="btn btn-dark rounded-pill p-3 px-5 fs-5 text-decoration-none">Purchase History</a>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section>
+        <div class="bg-footer text-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-12 text-center d-md-flex p-2">
+                        <span class="fw-bold text-white">Visiocreate</span>
+                        <div class="vr text-secondary mt-2 ms-4 me-4" style="height: 20px;"></div>
+                        <p class="text-white-50">Gift & Decoration Store</p>
+                    </div>
+                    <div
+                        class="col-md-6 col-12  d-flex flex-column flex-md-row justify-content-end align-items-center gap-3">
+                        <a href="index.html" class="text-decoration-none  text-white-50">Home</a>
+                        <div class="btn-group">
+                            <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Shop
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="shop.html">Shop1</a></li>
+                                <li><a class="dropdown-item" href="shop.html">Shop2</a></li>
+                                <li><a class="dropdown-item" href="Shop3.html">Shop3</a></li>
+                            </ul>
+                        </div>
+                        <a href="project.html" class="text-decoration-none text-white-50">Product</a>
+                        <a href="blogs.html" class="text-decoration-none text-white-50">Blog</a>
+                        <a href="contact-us.html" class="text-decoration-none text-white-50">contact us</a>
+
+                    </div>
+                </div>
+                <hr class="border-2 text-white">
+                <div class="row text-white d-flex  align-items-center flex-column-reverse flex-md-row text-center gy-3">
+                    <div class="col-md-6 col-12 flex-column-reverse flex-md-row align-items-center d-flex gap-3">
+                        <p class="mb-0 text-white-50">Copyright c 2024 visicreate All rights reserved</p>
+                        <div class="row">
+                            <div class="col-12 d-flex gap-2 p-2">
+                                <span>Privacy policy</span>
+                                <span>Terms of life</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12 d-flex justify-content-md-end justify-content-center gap-2">
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-square-facebook"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="js/orderComplete.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
