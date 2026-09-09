@@ -16,6 +16,52 @@
 
 <body>
 
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">VisioCreate</a>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <div class="btn-group">
+                        <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Shop
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="">Shop1</a></li>
+                            <li><a class="dropdown-item" href="">Shop2</a></li>
+                            <li><a class="dropdown-item" href="Shop3.html">Shop3</a></li>
+                        </ul>
+                    </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="d-flex align-items-center gap-3">
+                <a href="#" class=" d-none d-md-block text-decoration-none text-dark"><i
+                        class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="sign in.html" class="d-none d-md-block text-decoration-none text-dark"><i
+                        class="fa-regular fa-circle-user "></i></a>
+                <a href="#offcanvasExample" class="text-decoration-none text-dark position-relative"
+                    data-bs-toggle="offcanvas"><i class="fa-solid fa-store"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark"
+                        style="font-size: 0.6rem;">0</span></a>
+
+            </div>
+        </div>
+    </nav>
+
     <section class="container">
         <div class="text-center m-5 ">
 
@@ -23,23 +69,29 @@
 
         </div>
         <div class="row m-5">
-            <div class="col-11 col-md-4 d-flex  ">
-                <img src="images/success .png " class="w-25 h-75" alt="">
-                <h3 class="m-4 text-success ">
-                    Shopping cart
-                </h3>
+            <div class="col-11 col-md-4">
+                <a href="cart.html" class="d-flex text-decoration-none text-reset align-items-center">
+                    <img src="images/success .png " class="w-25 h-75" alt="">
+                    <h3 class="m-4 text-success ">
+                        Shopping cart
+                    </h3>
+                </a>
             </div>
-            <div class="col-11 col-md-4 d-flex   ">
-                <img src="images/2-num.png " class=" w-25 h-75" alt="">
-                <h3 class="m-4 d-none d-lg-inline">
-                    Check out details
-                </h3>
+            <div class="col-11 col-md-4">
+                <a href="checkout.html" class="d-flex text-decoration-none text-reset align-items-center">
+                    <img src="images/2-num.png " class=" w-25 h-75" alt="">
+                    <h3 class="m-4 d-none d-lg-inline">
+                        Check out details
+                    </h3>
+                </a>
             </div>
-            <div class="col-11 col-md-4 d-flex  opacity-25 ">
-                <img src="images/3-num.png " class=" d-none d-lg-inline w-25 h-75" alt="">
-                <h3 class="m-4  d-none d-lg-inline">
-                    Order complete
-                </h3>
+            <div class="col-11 col-md-4 opacity-25">
+                <a href="OrderComplete.html" class="d-flex text-decoration-none text-reset align-items-center">
+                    <img src="images/3-num.png " class=" d-none d-lg-inline w-25 h-75" alt="">
+                    <h3 class="m-4  d-none d-lg-inline">
+                        Order complete
+                    </h3>
+                </a>
             </div>
         </div>
         <div class="row">
@@ -52,7 +104,7 @@
 
                             <input type="text" class="form-control" id="firstName" placeholder="First name"
                                 aria-label="First name">
-                                <small class=" text-danger m-4  d-none" id="firstNameValidationMessage">
+                            <small class=" text-danger m-4  d-none" id="firstNameValidationMessage">
                                 enter a valid First name</small>
                         </div>
                         <div class="col">
@@ -60,7 +112,7 @@
 
                             <input type="text" class="form-control" id="lastName" placeholder="Last name"
                                 aria-label="Last name">
-                                 <small class=" text-danger m-4  d-none" id="lastNameValidationMessage">
+                            <small class=" text-danger m-4  d-none" id="lastNameValidationMessage">
                                 enter a valid Last name</small>
                         </div>
                     </div>
@@ -68,13 +120,13 @@
                         <div class="col-12 mt-2">
                             <label class="form-label text-secondary">Phone</label>
                             <input type="text" class="form-control" id="phone" placeholder="Phone number">
-                             <small class=" text-danger m-4  d-none" id="phoneValidationMessage">
+                            <small class=" text-danger m-4  d-none" id="phoneValidationMessage">
                                 enter a valid phone number</small>
                         </div>
                         <div class="col-12 mt-2">
                             <label class="form-label text-secondary">Email Address</label>
                             <input type="email" class="form-control" id="email" placeholder=" YourEmail ">
-                             <small class=" text-danger m-4  d-none" id="emailValidationMessage">
+                            <small class=" text-danger m-4  d-none" id="emailValidationMessage">
                                 enter a valid email</small>
                         </div>
                     </div>
@@ -100,16 +152,14 @@
                         </div>
 
                         <div class="col-11 m-auto">
-                            <label for="inputAddress" class="form-label text-secondary m-2">Town/City*</label>
+                            <label for="inputAddress" class="form-label text-secondary m-2">Town/City</label>
                             <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                            <small class=" text-danger m-4  d-none" id="cityValidationMessage">
-                                enter a valid city
-                            </small>
+
                         </div>
                         <div class="col-md-5 m-auto">
                             <label for="inputCity" class="form-label text-secondary m-2">City</label>
                             <input type="text" class="form-control" id="inputCity" placeholder="City">
-                            
+
                         </div>
 
                         <div class="col-md-5 m-auto">
@@ -187,78 +237,13 @@
             <div class="col-md-6 col-12">
                 <div class="border border-dark rounded-3 m-3">
                     <h5 class="fw-bold m-4">Order Summary</h5>
-                    <div class="col-12 my-5  row">
-                        <div class="col-3">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZPZ5Eo3g3NnkUa_-bG3Ypz86_jX4zCLyfYKvIuMyV3Q&s=10"
-                                alt="" class="w-100">
-                        </div>
-                        <div class="col-md-4 col-5 text-start row ">
-                            <h6>Tray Table</h6>
-                            <p class="text-secondary">color: <span>black</span></p>
-                            <div class="btn-group btn-group-sm col-md-4 p-3 ">
-                                <button type="button"
-                                    class="btn btn-outline-secondary border-end-0 d-none d-lg-inline ">-</button>
-                                <span
-                                    class="btn btn-outline-secondary border-end-0 border-start-0 d-none d-lg-inline ">2</span>
-                                <button type="button"
-                                    class="btn btn-sm btn-outline-secondary border-start-0 d-none d-lg-inline ">+</button>
-                            </div>
+                    <div id="checkoutItemsContainer">
 
 
-                        </div>
-                        <div class="col-4 text-end">
-                            <span class="fw-bold  ">$ 50.00</span>
-                        </div>
 
 
-                    </div>
-                    <div class="col-12 my-5  row">
-                        <div class="col-3">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZPZ5Eo3g3NnkUa_-bG3Ypz86_jX4zCLyfYKvIuMyV3Q&s=10"
-                                alt="" class="w-100">
-                        </div>
-                        <div class="col-md-4 col-5 text-start row ">
-                            <h6>Tray Table</h6>
-                            <p class="text-secondary">color: <span>black</span></p>
-                            <div class="btn-group btn-group-sm col-md-4 p-3 ">
-                                <button type="button"
-                                    class="btn btn-outline-secondary border-end-0 d-none d-lg-inline ">-</button>
-                                <span
-                                    class="btn btn-outline-secondary border-end-0 border-start-0 d-none d-lg-inline ">2</span>
-                                <button type="button"
-                                    class="btn btn-sm btn-outline-secondary border-start-0 d-none d-lg-inline ">+</button>
-                            </div>
 
 
-                        </div>
-                        <div class="col-4 text-end">
-                            <span class="fw-bold  ">$ 50.00</span>
-                        </div>
-
-
-                    </div>
-                    <div class="col-12 my-5  row">
-                        <div class="col-3">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZPZ5Eo3g3NnkUa_-bG3Ypz86_jX4zCLyfYKvIuMyV3Q&s=10"
-                                alt="" class="w-100">
-                        </div>
-                        <div class="col-md-4 col-5 text-start row ">
-                            <h6>Tray Table</h6>
-                            <p class="text-secondary">color: <span>black</span></p>
-                            <div class="btn-group btn-group-sm col-md-4 p-3 ">
-                                <button type="button"
-                                    class="btn btn-outline-secondary border-end-0 d-none d-lg-inline ">-</button>
-                                <span
-                                    class="btn btn-outline-secondary border-end-0 border-start-0 d-none d-lg-inline ">2</span>
-                                <button type="button"
-                                    class="btn btn-sm btn-outline-secondary border-start-0 d-none d-lg-inline ">+</button>
-                            </div>
-
-
-                        </div>
-                        <div class="col-4 text-end">
-                            <span class="fw-bold  ">$ 50.00</span>
-                        </div>
 
 
                     </div>
@@ -276,7 +261,7 @@
                             <p> <i class="fa-solid fa-ticket me-2"></i>JenkateMW</p>
                         </div>
                         <div class="col-6 mt-3 text-end">
-                            <p class="text-success">-$ <span>10.00</span> [remove]</p>
+                            <p class="text-success">-$ <span id="checkoutDiscount">10.00</span> [remove]</p>
 
                         </div>
                         <hr class="border  border-1">
@@ -291,14 +276,14 @@
                             <p class="">Subtotal</p>
                         </div>
                         <div class="col-6 mt-2 text-end">
-                            <p class="fw-bold ">$ 100.00</p>
+                            <p class="fw-bold" id="checkoutSubtotal">$ 0.00</p>
                         </div>
                         <hr class="border  border-1">
                         <div class="col-6 mt-2">
                             <p class="fw-bold fs-4">Total</p>
                         </div>
                         <div class="col-6 mt-2 text-end">
-                            <p class="fw-bold">$ 110.00</p>
+                            <p class="fw-bold" id="checkoutTotal">$ 0.00</p>
                         </div>
 
                     </div>
@@ -309,6 +294,56 @@
 
 
 
+    </section>
+    <section>
+        <div class="bg-footer text-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-12 text-center d-md-flex p-2">
+                        <span class="fw-bold text-white">Visiocreate</span>
+                        <div class="vr text-secondary mt-2 ms-4 me-4" style="height: 20px;"></div>
+                        <p class="text-white-50">Gift & Decoration Store</p>
+                    </div>
+                    <div
+                        class="col-md-6 col-12  d-flex flex-column flex-md-row justify-content-end align-items-center gap-3">
+                        <a href="index.html" class="text-decoration-none  text-white-50">Home</a>
+                        <div class="btn-group">
+                            <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Shop
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="">Shop1</a></li>
+                                <li><a class="dropdown-item" href="">Shop2</a></li>
+                                <li><a class="dropdown-item" href="Shop3.html">Shop3</a></li>
+                            </ul>
+                        </div>
+                        <a href="#" class="text-decoration-none text-white-50">Product</a>
+                        <a href="#" class="text-decoration-none text-white-50">Blog</a>
+                        <a href="#" class="text-decoration-none text-white-50">contact us</a>
+
+                    </div>
+                </div>
+                <hr class="border-2 text-white">
+                <div class="row text-white d-flex  align-items-center flex-column-reverse flex-md-row text-center gy-3">
+                    <div class="col-md-6 col-12 flex-column-reverse flex-md-row align-items-center d-flex gap-3">
+                        <p class="mb-0 text-white-50">Copyright c 2024 visicreate All rights reserved</p>
+                        <div class="row">
+                            <div class="col-12 d-flex gap-2 p-2">
+                                <span>Privacy policy</span>
+                                <span>Terms of life</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12 d-flex justify-content-md-end justify-content-center gap-2">
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-square-facebook"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </section>
 
     <script src="js/checkOut.js"></script>
